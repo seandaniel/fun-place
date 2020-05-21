@@ -13,6 +13,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
   font-size: 2rem;
+  margin-bottom: 20px;
 }
 
 @media (min-width: 1200px) {
@@ -63,4 +64,21 @@ button {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+}
+
+.button-styles {
+  display: inline-block;
+  font-size: 1.25rem;
+  font-family: $secondary-font;
+  color: $secondary-background-color;
+  background-color: $accent-color;
+  padding: 10px;
+  border: 2px solid $accent-color;
+  transition: background-color .35s, color .35s;
+  margin-top: 40px;
+  &:hover,
+  &:active {
+    background-color: inherit;
+    color: $accent-color;
+  }
 }
