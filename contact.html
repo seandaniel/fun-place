@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Walter+Turncoat&display=swap"
+    rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/d9461c25c6.js"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>Fun Place</title>
+</head>
+
+<!-- input to toggle .swideswipe-nav -->
+<input type="checkbox" id="toggle" name="toggle">
+<!-- right-align sideswipe navigation -->
+<nav class="sideswipe-nav">
+  <ul>
+    <li><button aria-label="Exit Navigation"><label for="toggle"><i class="fas fa-arrow-left"></i></label></button></li>
+    <li><a href="#">Course</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Allumni</a></li>
+    <li><a href="#">Blog</a></li>
+  </ul>
+</nav>
+
+<body>
+
+  <header>
+    <div class="wrapper wrapper-header">
+      <nav>
+        <!-- mobile navigation -->
+        <button aria-label="Open Navigation"><label for="toggle"><i class="fas fa-align-right"></i></label></button>
+        <!-- desktop navigation -->
+        <ul class="desktop-ul">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <h1>Fun Place</h1>
+    </div>
+    <img src="styles/assets/home-box-header.jpg" alt="A child doing an ollie on a skateboard">
+  </header>
