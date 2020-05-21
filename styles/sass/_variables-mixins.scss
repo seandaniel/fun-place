@@ -8,3 +8,9 @@ $footer-color: #044779;
 //fonts
 $primary-font: 'Roboto', sans-serif;
 $secondary-font: 'Walter Turncoat', cursive;
+
+//mixins
+@mixin iconMarginLeft($iconWidth) {
+  //icon width + icon's margin-left
+  margin-left: calc(#{$iconWidth} + 20px);
+}
