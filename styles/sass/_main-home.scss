@@ -170,3 +170,23 @@
 .img-article-two article {
   margin-bottom: 0;
 }
+
+//full-bleed-article-section
+.full-bleed-article-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  margin-bottom: 100px;
+  article {
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .full-bleed-article-section article {
+    max-width: 950px;
+  }
+}
