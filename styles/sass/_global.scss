@@ -29,8 +29,8 @@ p {
 
 @media (min-width: 1200px) {
   p {
-    font-size: 1.25rem;
-    line-height: 2rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -80,5 +80,11 @@ button {
   &:active {
     background-color: inherit;
     color: $accent-color;
+  }
+}
+
+@media (min-width: 1200px) {
+  .button-styles {
+    font-size: 1.5rem;
   }
 }
