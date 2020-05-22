@@ -21,6 +21,7 @@
 
 @media (min-width: 1200px) {
   .contact-section .wrapper {
+    // to align form to the right
     position: relative;
     form {
       position: absolute;
@@ -86,6 +87,7 @@
     margin: 100px 0 200px;
   }
 }
+
 .contact-information-container nav ul li a:hover,
 .contact-information-container nav ul li a:focus {
   color: $accent-color;

@@ -64,6 +64,10 @@ header {
   background: url("assets/home-header.jpg");
   background-size: cover;
   height: 697px;
+  .wrapper {
+    // to align h1 to the left
+    position: relative;
+  }
   nav {
     display: flex;
     justify-content: flex-end;
