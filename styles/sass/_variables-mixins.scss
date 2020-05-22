@@ -10,6 +10,11 @@ $primary-font: 'Roboto', sans-serif;
 $secondary-font: 'Walter Turncoat', cursive;
 
 //mixins
+@mixin secondaryHeaderStyles ($path) {
+  background: url($path);
+  height: 556px;
+}
+
 @mixin iconMarginLeft($iconWidth) {
   //icon width + icon's margin-left
   margin-left: calc(#{$iconWidth} + 20px);
