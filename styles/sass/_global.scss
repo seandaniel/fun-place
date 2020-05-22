@@ -7,30 +7,30 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: $secondary-font;
   font-weight: 400;
-  text-transform: uppercase;
   margin: 0;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 32px;
   margin-bottom: 20px;
 }
 
 @media (min-width: 1200px) {
   h2 {
-    font-size: 2.5rem;
+    font-size: 40px;
   }
 }
 
 p {
-  line-height: 1.5rem;
+  line-height: 24px;
+  font-weight: 400;
   margin: 0;
 }
 
 @media (min-width: 1200px) {
   p {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
+    font-size: 18px;
+    line-height: 28px;
   }
 }
 
@@ -60,15 +60,34 @@ button {
   padding: 0;
 }
 
+input,
+textarea {
+  border: none;
+  background-color: inherit;
+  resize: none;
+}
+
+@media (min-width: 1200px) {
+  input,
+  textarea {
+    font-size: 18px;
+  }
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
 .wrapper {
   max-width: 1200px;
-  width: 100%;
+  width: 95%;
   margin: 0 auto;
 }
 
 .button-styles {
   display: inline-block;
-  font-size: 1.25rem;
+  font-size: 20px;
   font-family: $secondary-font;
   color: $secondary-background-color;
   background-color: $accent-color;
@@ -85,6 +104,6 @@ button {
 
 @media (min-width: 1200px) {
   .button-styles {
-    font-size: 1.5rem;
+    font-size: 24px;
   }
 }
