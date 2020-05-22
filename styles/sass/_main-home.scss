@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  padding: 0 20px;
+  // padding: 0 20px;
   // header img height
   margin: 320px 0 100px;
   article {
@@ -65,7 +65,7 @@
   display: flex;
   align-items: center;
   i {
-    font-size: 1.25rem;
+    font-size: 20px;
     color: $secondary-background-color;
     background-color: $accent-color;
     padding: 10px;
@@ -139,7 +139,6 @@
   max-width: 900px;
   // vertical axis box shadow + 50px
   margin-bottom: 50px;
-  padding: 0 20px;
 }
 
 @media (min-width: 1200px) {
@@ -147,13 +146,11 @@
     text-align: right;
     max-width: 475px;
     margin: 0 -25px 0 0;
-    padding: 0;
   }
 
   .img-article-two article {
     max-width: 475px;
     margin: 0 0 0 -25px;
-    padding: 0;
   }
 }
 
@@ -178,7 +175,6 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 20px;
   margin-bottom: 100px;
   article {
     max-width: 600px;
@@ -203,7 +199,6 @@
 
 // full-bleed-img-article-section
 .full-bleed-img-article-section {
-  padding: 0 20px;
   margin-bottom: 100px;
   .img-article-container {
     display: flex;
@@ -228,15 +223,12 @@
 }
 
 @media(min-width: 1200px) {
-  .full-bleed-img-article-section {
-    padding: 0;
-    .img-article-container {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      img {
-        margin: 0 0 0 25px;
-      }
+  .full-bleed-img-article-section .img-article-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      margin: 0 0 0 25px;
     }
   }
 
@@ -254,7 +246,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 20px;
     img {
       width: 100%;
       max-width: 350px;
@@ -272,7 +263,6 @@
   .three-column-image-section .three-column-image-container {
     flex-direction: row;
     justify-content: space-between;
-    padding: 0;
     img {
       margin-bottom: 0;
     }
