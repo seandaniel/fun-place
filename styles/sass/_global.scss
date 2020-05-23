@@ -81,7 +81,7 @@ fieldset {
 
 .button-styles {
   display: inline-block;
-  font-size: 20px;
+  font-size: 24px;
   font-family: $secondary-font;
   color: $secondary-background-color;
   background-color: $accent-color;
@@ -90,14 +90,8 @@ fieldset {
   transition: background-color .35s, color .35s;
   margin-top: 40px;
   &:hover,
-  &:active {
+  &:focus {
     background-color: inherit;
     color: $accent-color;
-  }
-}
-
-@media (min-width: 1200px) {
-  .button-styles {
-    font-size: 24px;
   }
 }
