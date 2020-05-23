@@ -139,6 +139,7 @@
   max-width: 900px;
   // vertical axis box shadow + 50px
   margin-bottom: 50px;
+  padding: 0 2.5%;
 }
 
 @media (min-width: 1200px) {
@@ -146,11 +147,13 @@
     text-align: right;
     max-width: 475px;
     margin: 0 -25px 0 0;
+    padding: 0;
   }
 
   .img-article-two article {
     max-width: 475px;
     margin: 0 0 0 -25px;
+    padding: 0;
   }
 }
 
