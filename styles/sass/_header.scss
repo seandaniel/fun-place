@@ -45,7 +45,7 @@ input[type="checkbox"]:checked + .sideswipe-nav {
 
 .sideswipe-nav ul li a {
   padding-bottom: 5px;
-  transition: color .35s, border-bottom .35s;
+  transition: color .35s;
   &:hover,
   &:focus {
     color: $accent-color;
@@ -114,7 +114,7 @@ header nav button:focus i {
     font-weight: 700;
     width: 400px;
     li a {
-      transition: color .35s, border-bottom .35s;
+      transition: color .35s;
       padding-bottom: 5px;
       &:hover,
       &:focus {

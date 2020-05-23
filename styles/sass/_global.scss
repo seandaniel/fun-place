@@ -56,16 +56,10 @@ button {
 
 input,
 textarea {
+  font-size: 20px;
   border: none;
   background-color: inherit;
   resize: none;
-}
-
-@media (min-width: 1200px) {
-  input,
-  textarea {
-    font-size: 18px;
-  }
 }
 
 fieldset {
