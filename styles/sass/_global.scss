@@ -17,21 +17,15 @@ h2 {
 
 @media (min-width: 1200px) {
   h2 {
-    font-size: 40px;
+    font-size: 45px;
   }
 }
 
 p {
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 28px;
   font-weight: 400;
   margin: 0;
-}
-
-@media (min-width: 1200px) {
-  p {
-    font-size: 18px;
-    line-height: 28px;
-  }
 }
 
 ul {
