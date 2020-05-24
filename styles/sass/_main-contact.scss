@@ -1,20 +1,19 @@
+// contact section
 form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px 20px;
-  // box-shadow yay!
-  margin: 100px auto 125px;
+  @include flexColumnCenter;
   max-width: 675px;
+  padding: 40px 20px;
+  // box-shadow + 100px;
+  margin: 100px auto 125px;
   background-color: $secondary-background-color;
   box-shadow: 25px 25px 0px 0px $accent-color;
   textarea,
   input {
     color: #f4f4f4;
     width: 100%;
-    border-bottom: 2px solid #f4f4f4;
     padding: 20px;
     margin-bottom: 20px;
+    border-bottom: 2px solid #f4f4f4;
   }
 }
 
@@ -77,12 +76,6 @@ form button {
   }
 }
 
-@media (min-width: 1200px) {
-  .contact-information-container {
-    margin: 100px 0 200px;
-  }
-}
-
 .contact-information-container nav ul li a:hover,
 .contact-information-container nav ul li a:focus {
   color: $accent-color;
@@ -95,4 +88,10 @@ form button {
 
 .contact-information-container p:nth-child(2) {
   margin-bottom: 40px
+}
+
+@media (min-width: 1200px) {
+  .contact-information-container {
+    margin: 100px 0 200px;
+  }
 }

@@ -1,5 +1,4 @@
 // sidebar section
-
 @media (min-width: 1200px) {
   .sidebar-section {
     position: relative;
@@ -14,7 +13,7 @@
   width: 100%;
   max-width: 475px;
   height: auto;
-  // .wrapper width
+  // .wrapper
   padding: 0 2.5%;
   margin: 100px auto 0;
 }
@@ -29,9 +28,8 @@
 }
 
 .sidebar-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flexColumnCenter;
+  // .wrapper
   max-width: calc(475px - 5%);
   padding: 40px 20px;
   margin: 0 auto 100px;
@@ -47,8 +45,7 @@
 
 .sidebar-container a {
   font-family: $primary-font;
-  font-size: 18px;
-  line-height: 28px;
+  @include baseFontStyles;
   transition: color .35s;
   &:hover,
   &:focus {
@@ -64,10 +61,6 @@
     z-index: 10;
     width: 360px;
     padding: 410px 40px 40px;
-    a {
-      font-size: 18px;
-      line-height: 28px; 
-    }
   }
 }
 
@@ -82,13 +75,6 @@
 .posts-container ul li {
   position: relative;
   margin-left: 20px;
-  line-height: 25px;
-}
-
-@media (min-width: 1200px) {
-  .posts-container ul li {
-    font-size: 18px;
-  }
 }
 
 .posts-container ul li::before {
@@ -96,18 +82,15 @@
   position: absolute;
   top: 12px;
   left: -20px;
-  background-color: $accent-color;
   height: 5px;
   width: 5px;
+  background-color: $accent-color;
   border-radius: 50%;
 }
 
 // blog post section
-
 .blog-post-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flexColumnCenter;
 }
 
 @media (min-width: 1200px) {
@@ -117,29 +100,29 @@
 }
 
 .blog-post-section img {
-  object-fit: cover;
   width: 90%;
   max-width: 675px;
   height: 400px;
   // box-shadow
   margin-left: 25px;
+  object-fit: cover;
   box-shadow: -25px 25px 0px 0px $accent-color;
 }
 
 @media (min-width: 1200px) {
   .blog-post-section img {
     position: relative;
-    margin-top: -140px;
     width: 55%;
     max-width: 810px;
     height: 500px;
+    margin-top: -140px;
   }
 }
 
 .blog-post-section article {
   // img width + box-shadow
   width: calc(90% + 25px);
-  // +25px for box-shadow
+  // box-shadow + 675px;
   max-width: 700px;
   padding: 40px 20px;
   margin-bottom: 100px;
@@ -156,7 +139,7 @@
 
 @media (min-width: 1200px) {
   .blog-post-section article {
-    // +25px for box-shadow
+    // box-shadow
     width: calc(55% + 25px);
     max-width: 835px;
     padding: 100px 80px;
@@ -164,7 +147,7 @@
 }
 
 .comments-container {
-  // imitating .wrapper spacing
+  // .wrapper
   padding: 0 2.5%;
   margin: 0 auto;
 }
@@ -183,15 +166,13 @@
 }
 
 .blog-post-section .user-comment-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flexColumnCenter;
   margin-bottom: 40px;
   img {
     width: 125px;
     height: 125px;
-    box-shadow: none;
     margin: 0 0 20px 0;
+    box-shadow: none;
   }
 }
 
@@ -218,13 +199,6 @@
   margin-bottom: 10px;
 }
 
-@media (min-width: 1200px) {
-  .user-comment-container p:first-child {
-    font-size: 25px;
-    line-height: 37px;
-  }
-}
-
 .comment-text-container {
   max-width: 400px;
 }
@@ -236,10 +210,11 @@
 }
 
 .form-blog {
+  // using styles from form in _main-contact.scss
   margin-bottom: 100px;
+  // imitates .wrapper
   padding: 40px 2.5%; 
   width: 100%;
-  max-width: 675px;
   background-color: inherit;
   box-shadow: none;
   input,

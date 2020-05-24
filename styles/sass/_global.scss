@@ -22,16 +22,19 @@ h2 {
 }
 
 p {
-  font-size: 18px;
-  line-height: 28px;
+  @include baseFontStyles;
   font-weight: 400;
   margin: 0;
 }
 
 ul {
   list-style: none;
+  @include baseFontStyles;
   padding-left: 0;
   margin: 0;
+  li {
+    color: $font-color;
+  }
 }
 
 a {
