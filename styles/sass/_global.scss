@@ -57,18 +57,19 @@ button {
   padding: 0;
 }
 
+fieldset {
+  border: none;
+  padding: 0;
+}
+
 input,
 textarea {
-  font-size: 20px;
+  @include baseFontStyles;
   border: none;
   background-color: inherit;
   resize: none;
 }
 
-fieldset {
-  border: none;
-  padding: 0;
-}
 
 .wrapper {
   max-width: 1200px;
