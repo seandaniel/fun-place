@@ -1,21 +1,27 @@
-//colors
+// colors
 $font-color: #f3faff;
 $primary-background-color: #03697c;
 $secondary-background-color: #474bb5;
 $accent-color: #08fded;
 $footer-color: #044779;
 
-//fonts
+// fonts
 $primary-font: 'Roboto', sans-serif;
 $secondary-font: 'Walter Turncoat', cursive;
 
-//mixins
+// mixins
+@mixin flexColumnCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @mixin secondaryHeaderStyles ($path) {
   background: url($path);
   height: 556px;
 }
 
 @mixin iconMarginLeft($iconWidth) {
-  //icon width + icon's margin-left
+  // icon width + icon's margin-left
   margin-left: calc(#{$iconWidth} + 20px);
 }
