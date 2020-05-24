@@ -60,11 +60,11 @@ input[type="checkbox"]:checked + .sideswipe-nav {
 // header home
 header {
   position: relative;
-  background: url("assets/home-header.jpg");
+  background: url("assets-optimized/home-header.jpg");
   background-size: cover;
   height: 697px;
   .wrapper {
-    // to align h1 to with .desktop-ul
+    // aligns h1 with .desktop-ul
     position: relative;
   }
   nav {
@@ -166,7 +166,7 @@ header img {
 
 // header contact
 .header-contact {
-  @include secondaryHeaderStyles ("assets/contact-header.jpg");
+  @include secondaryHeaderStyles ("assets-optimized/contact-header.jpg");
 }
 
 @media (min-width: 700px) {
@@ -177,7 +177,7 @@ header img {
 
 // header blog
 .header-blog {
-  @include secondaryHeaderStyles ("assets/blog-header.jpg");
+  @include secondaryHeaderStyles ("assets-optimized/blog-header.jpg");
 }
 
 @media (min-width: 700px) {
