@@ -10,6 +10,11 @@ $primary-font: 'Roboto', sans-serif;
 $secondary-font: 'Walter Turncoat', cursive;
 
 // mixins
+@mixin baseFontStyles {
+  font-size: 18px;
+  line-height: 28px;
+}
+
 @mixin flexColumnCenter {
   display: flex;
   flex-direction: column;
