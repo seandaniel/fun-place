@@ -1,6 +1,6 @@
 // contact section
 form {
-  @include flexColumnCenter;
+  @include flex-column-center;
   max-width: 675px;
   padding: 40px 20px;
   // box-shadow + 100px;

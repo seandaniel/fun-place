@@ -29,7 +29,7 @@
 }
 
 .sidebar-container {
-  @include flexColumnCenter;
+  @include flex-column-center;
   // .wrapper
   max-width: calc(475px - 5%);
   padding: 40px 20px;
@@ -46,7 +46,7 @@
 
 .sidebar-container a {
   font-family: $primary-font;
-  @include baseFontStyles;
+  @include base-font-styles;
   transition: color .35s;
   &:hover,
   &:focus {
@@ -91,7 +91,7 @@
 
 // blog post section
 .blog-post-section {
-  @include flexColumnCenter;
+  @include flex-column-center;
 }
 
 @media (min-width: 1200px) {
@@ -167,7 +167,7 @@
 }
 
 .blog-post-section .user-comment-container {
-  @include flexColumnCenter;
+  @include flex-column-center;
   margin-bottom: 40px;
   img {
     width: 125px;

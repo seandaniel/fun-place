@@ -10,23 +10,23 @@ $primary-font: 'Roboto', sans-serif;
 $secondary-font: 'Walter Turncoat', cursive;
 
 // mixins
-@mixin baseFontStyles {
+@mixin base-font-styles {
   font-size: 18px;
   line-height: 28px;
 }
 
-@mixin flexColumnCenter {
+@mixin flex-column-center {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-@mixin secondaryHeaderStyles ($path) {
+@mixin secondary-header-styles ($path) {
   background: url($path);
   height: 556px;
 }
 
-@mixin iconMarginLeft($iconWidth) {
+@mixin icon-margin-left ($icon-width) {
   // icon width + icon's margin-left
-  margin-left: calc(#{$iconWidth} + 20px);
+  margin-left: calc(#{$icon-width} + 20px);
 }

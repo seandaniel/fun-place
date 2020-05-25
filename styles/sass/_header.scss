@@ -166,7 +166,7 @@ header img {
 
 // header contact
 .header-contact {
-  @include secondaryHeaderStyles ("assets-optimized/contact-header.jpg");
+  @include secondary-header-styles ("assets-optimized/contact-header.jpg");
 }
 
 @media (min-width: 700px) {
@@ -177,7 +177,7 @@ header img {
 
 // header blog
 .header-blog {
-  @include secondaryHeaderStyles ("assets-optimized/blog-header.jpg");
+  @include secondary-header-styles ("assets-optimized/blog-header.jpg");
 }
 
 @media (min-width: 700px) {

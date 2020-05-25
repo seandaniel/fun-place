@@ -40,19 +40,19 @@
   } 
 
   .four-article-container article:first-child p {
-    @include iconMarginLeft(42.5px);
+    @include icon-margin-left(42.5px);
   }
 
   .four-article-container article:nth-child(2) p {
-    @include iconMarginLeft(45px);
+    @include icon-margin-left(45px);
   }
 
   .four-article-container article:nth-child(3) p {
-    @include iconMarginLeft(37.5px);
+    @include icon-margin-left(37.5px);
   }
 
   .four-article-container article:last-child p {
-    @include iconMarginLeft(40px);
+    @include icon-margin-left(40px);
   }
 }
 
@@ -164,7 +164,7 @@
 
 // full bleed article section
 .full-bleed-article-section {
-  @include flexColumnCenter;
+  @include flex-column-center;
   text-align: center;
   margin-bottom: 100px;
 }
@@ -186,7 +186,7 @@
 .full-bleed-img-article-section {
   margin-bottom: 100px;
   .img-article-container {
-    @include flexColumnCenter;
+    @include flex-column-center;
     img {
       width: 100%;
       max-width: 350px;
@@ -223,7 +223,7 @@
   background-color: $secondary-background-color;
   padding: 100px 0;
   .three-column-image-container {
-    @include flexColumnCenter;
+    @include flex-column-center;
     justify-content: space-between;
     img {
       width: 100%;
