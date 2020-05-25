@@ -1,5 +1,5 @@
 // sidebar section
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
   .sidebar-section {
     position: relative;
     .wrapper {
@@ -18,7 +18,7 @@
   margin: 100px auto 0;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
   .sidebar-section img {
     position: absolute;
     left: 0;
@@ -54,7 +54,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
   .sidebar-container {
     position: absolute;
     top: 160px;
@@ -94,7 +94,7 @@
   @include flex-column-center;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
   .blog-post-section {
     align-items: flex-end;
   }
@@ -110,7 +110,7 @@
   box-shadow: -25px 25px 0px 0px $accent-color;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
   .blog-post-section img {
     position: relative;
     width: 55%;
@@ -138,7 +138,7 @@
   margin-bottom: 0;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
   .blog-post-section article {
     // box-shadow
     width: calc(55% + 25px);
@@ -160,7 +160,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
   .comments-container {
     margin: 0 80px 0 0;
   }
@@ -202,9 +202,10 @@
 
 .comment-text-container {
   max-width: 400px;
+  width: 100%;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
   .comment-text-container {
     max-width: 500px;
   }
@@ -213,7 +214,7 @@
 .form-blog {
   // using styles from form in _main-contact.scss
   margin-bottom: 100px;
-  // imitates .wrapper
+  // .wrapper
   padding: 40px 2.5%; 
   width: 100%;
   background-color: inherit;
@@ -230,7 +231,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
   .form-blog {
     margin-right: 80px;
   }
