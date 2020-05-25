@@ -26,7 +26,7 @@ $secondary-font: 'Walter Turncoat', cursive;
   height: 556px;
 }
 
-@mixin icon-margin-left ($icon-width) {
+@mixin p-margin-left ($icon-width) {
   // icon width + icon's margin-left
   margin-left: calc(#{$icon-width} + 20px);
 }

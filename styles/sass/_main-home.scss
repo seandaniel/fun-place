@@ -40,19 +40,19 @@
   } 
 
   .four-article-container article:first-child p {
-    @include icon-margin-left(42.5px);
+    @include p-margin-left(42.5px);
   }
 
   .four-article-container article:nth-child(2) p {
-    @include icon-margin-left(45px);
+    @include p-margin-left(45px);
   }
 
   .four-article-container article:nth-child(3) p {
-    @include icon-margin-left(37.5px);
+    @include p-margin-left(37.5px);
   }
 
   .four-article-container article:last-child p {
-    @include icon-margin-left(40px);
+    @include p-margin-left(40px);
   }
 }
 
